@@ -1,24 +1,27 @@
 // 1. Change the title of the page to `Hello AltCampus!`
-
+let title = document.querySelector(`title`)
+title.innerText= `Hello AltCampus`
 // 2. Select the element using the children property:
-
 //    - Select the `h1` element and change the value to `Learning DOM`
-
+let head1 = document.children[0].children[1].children[0];
+head1.innerText = `Learning Dom`
 //    - Select the first `li` element inside the `ul` with class `topics` and change the innerText to `all about document`
+let All = document.children[0].children[1].children[5].children[0];
+All.innerText = `all about document`
 //    - Select the input element with name `email`
-
+document.children[0].children[1].children[6].children[2];
 // 3. Log the number (using console.log) of children of all the `li` element inside the ul with class `topics`
-
+document.querySelectorAll(`li`).length
 // 4. Select the first input using the `type` selector and store them in variable named `emailInput`
-
+let emailInput = document.querySelector(`input`)
 // 5. Select the ul element using class selector and store in `topics`
-
+let topic = document.querySelector(`.topics`) // a existing class name cant be redeclared as a new variable
 // 6. Select the first label element and store in `label`
-
+let label = document.querySelector(`label`)
 // 7. Select the input of type `checkbox` with the `id` selector and store in `inputCheckbox`
-
+// Can't be defined again because class has been declared with same name 
 // 8. Select the input of type password using Attribute selectors. (eg: input[type="text"]) and store in `password`
-
+let password = document.querySelector(`input`)[type=`text`]
 // 9. Select the input using the placeholder attribute selector with value `password` and store in `attrPassword`
 
 // 10. Select all the `li` element and store in `allTopics`
