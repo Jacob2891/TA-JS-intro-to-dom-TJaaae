@@ -2,7 +2,7 @@
 
 Write a function named `createInputElm` that accepts two parameter (label and `type`) type
 default value to be "text" and return the input element inside label. (create it using `createElement`)
-
+ 
 */
 
 // Your code goes here
